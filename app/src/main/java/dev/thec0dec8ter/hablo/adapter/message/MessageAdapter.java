@@ -116,7 +116,7 @@ public class MessageAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 //                    return 4;
 //            }
 //        }
-        return 4;
+        return 0;
     }
 
     @Override
