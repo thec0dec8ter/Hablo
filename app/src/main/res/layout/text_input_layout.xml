@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent"
+    android:layout_margin="4dp"
+    android:elevation="4dp">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="22dp"
+            android:layout_margin="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+
+                <ImageView
+                    android:id="@+id/btn_emoji_picker"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_smiley"/>
+
+                <EditText
+                    android:id="@+id/edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Message"
+                    android:minHeight="44dp"
+                    android:maxHeight="196dp"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/btn_attach"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_attach"/>
+
+                <ImageView
+                    android:id="@+id/btn_camera"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_photo_camera"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="22dp"
+            android:layout_margin="4dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="bottom">
+
+                <ImageView
+                    android:id="@+id/delete"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_delete"/>
+
+                <TextView
+                    android:id="@+id/timer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="0:00"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="32dp"
+                    android:paddingEnd="32dp"
+                    android:gravity="center_vertical"
+                    android:text="Cancel"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/holo_red_light"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_voice_note"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_margin="4dp"
+        android:layout_gravity="bottom"
+        app:cardCornerRadius="22dp">
+
+        <ImageView
+            android:id="@+id/img_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:background="@color/purple_500"
+            android:src="@drawable/ic_mic"
+            app:tint="@color/white"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="More"
+        android:icon="@drawable/ic_more_vert"
+        android:iconTint="@color/white">
+
+        <menu>
+
+            <item
+                android:title="Edit"/>
+
+            <item
+                android:title="All media"/>
+
+            <item
+                android:title="Show in chat"/>
+
+            <item
+                android:title="Set as"/>
+
+            <item
+                android:title="Rotate"/>
+
+            <item
+                android:title="Delete"/>
+
+        </menu>
+
+
+    </item>
+
+</menu>

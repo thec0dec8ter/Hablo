@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".CallActivity">
+
+    <org.webrtc.SurfaceViewRenderer
+        android:id="@+id/remote_gl_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <org.webrtc.SurfaceViewRenderer
+        android:id="@+id/local_gl_surface_view"
+        android:layout_width="160dp"
+        android:layout_height="320dp"
+        android:layout_gravity="bottom|end"/>
+
+    <Button
+        android:id="@+id/start_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"/>
+
+    <Button
+        android:id="@+id/end_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"/>
+
+</FrameLayout>

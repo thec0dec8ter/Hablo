@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "545378455522",
+    "firebase_url": "https://hablo-59775-default-rtdb.firebaseio.com",
+    "project_id": "hablo-59775",
+    "storage_bucket": "hablo-59775.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545378455522:android:5fb8bfc97e17b51cdfb3bb",
+        "android_client_info": {
+          "package_name": "dev.thec0dec8ter.hablo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545378455522-13od8boffes5eiq6l8s4ju9bu5n8bokk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.thec0dec8ter.hablo",
+            "certificate_hash": "8c6463239fad9496978dfc42403eaa06fd51629d"
+          }
+        },
+        {
+          "client_id": "545378455522-tdb3nkup9du3e17khbbrf5cujdbjslpt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcP_k7pAODIENwnCBtYqULqwasK6_d0rE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "545378455522-tdb3nkup9du3e17khbbrf5cujdbjslpt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

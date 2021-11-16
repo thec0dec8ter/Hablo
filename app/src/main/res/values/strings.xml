@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Hablo</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a ex pretium, molestie mauris ac, elementum risus.
+        Integer ac efficitur tellus. Nunc ultrices pulvinar turpis at fringilla.
+        Morbi sapien leo, aliquam nec auctor vel, pellentesque at ex. Nullam vehicula ullamcorper felis.
+        Pellentesque tellus elit, vulputate eget vestibulum quis, efficitur venenatis augue.
+        Duis risus erat, porttitor facilisis convallis tempus, aliquet sed diam. Suspendisse scelerisque malesuada aliquam.
+        Fusce at diam augue. Aliquam mollis tristique ante, at elementum justo sollicitudin eu.
+    </string>
+
+    <string name="bullet">&#8226;</string>
+</resources>

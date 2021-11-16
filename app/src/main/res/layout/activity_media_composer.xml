@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MediaComposerActivity">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/control_play"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_cancel"/>
+
+        <ImageView
+            android:id="@+id/crop"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_toStartOf="@id/shape"
+            android:padding="8dp"
+            android:src="@drawable/ic_crop_rotate"/>
+
+        <ImageView
+            android:id="@+id/shape"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_toStartOf="@id/text"
+            android:padding="8dp"
+            android:src="@drawable/ic_shape"/>
+
+        <ImageView
+            android:id="@+id/text"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_toStartOf="@id/pen"
+            android:padding="8dp"
+            android:src="@drawable/ic_text_field"/>
+
+        <ImageView
+            android:id="@+id/pen"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_pen"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:background="@android:color/transparent"
+            android:elevation="4dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:cardCornerRadius="22dp"
+                android:layout_margin="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="bottom">
+
+                    <ImageView
+                        android:id="@+id/btn_emoji_picker"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_gallery"/>
+
+                    <EditText
+                        android:id="@+id/edit_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="Add a caption..."
+                        android:minHeight="44dp"
+                        android:maxHeight="196dp"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/btn_attach"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:padding="12dp"
+                        android:src="@drawable/ic_attach"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_voice_note"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_margin="4dp"
+                android:layout_gravity="bottom"
+                app:cardCornerRadius="22dp">
+
+                <ImageView
+                    android:id="@+id/img_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:background="@color/purple_500"
+                    android:src="@drawable/ic_mic"
+                    app:tint="@color/white"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

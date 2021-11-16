@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="@layout/activity_main">
+
+    <item
+        android:id="@+id/menu_call"
+        android:title="Call"
+        android:icon="@drawable/ic_call"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_video_call"
+        android:title="Video call"
+        android:icon="@drawable/ic_video_call"
+        app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:title="More"
+        android:icon="@drawable/ic_more_vert"
+        app:showAsAction="ifRoom">
+
+        <menu>
+
+            <item
+                android:id="@+id/show_participants"
+                android:title="Show participants"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/media"
+                android:title="Media, links, docs"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/search"
+                android:title="Search"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/exit"
+                android:title="Exit"
+                app:showAsAction="never" />
+
+        </menu>
+
+    </item>
+
+</menu>
