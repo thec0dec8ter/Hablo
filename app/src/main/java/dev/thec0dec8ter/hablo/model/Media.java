@@ -7,6 +7,7 @@ public class Media implements Serializable {
     private String uri;
     private String type;
     private long duration;
+    private String sender = "";
 
     public String getId() {
         return id;
@@ -38,5 +39,13 @@ public class Media implements Serializable {
 
     public void setDuration(long duration) {
         this.duration = duration;
+    }
+
+    public String getSender() {
+        return sender;
+    }
+
+    public void setSender(String sender) {
+        this.sender = sender;
     }
 }

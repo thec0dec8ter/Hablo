@@ -26,14 +26,10 @@ public class MessageViewHolder extends RecyclerView.ViewHolder{
     }
 
     public void bind(Message message){
-        final long time = Long.parseLong(message.getTimestamp());
-        user.setText(message.getUser());
-        content.setText(message.getContent());
-        timestamp.setText(new SimpleDateFormat("HH:mm", Locale.US).format(new Date(time)));
-        if(user.equals(message.getUser())){
-            RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) container.getLayoutParams();
-            params.addRule(RelativeLayout.ALIGN_PARENT_END);
-            container.setLayoutParams(params);
+        if(message.getSender().equals("isMe")){
+            itemView.setTag(true);
+        }else {
+            itemView.setTag(false);
         }
     }
 }

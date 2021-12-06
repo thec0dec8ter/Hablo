@@ -14,6 +14,10 @@ public class DocumentViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void bind(Document document){
-
+        if(document.getSender().equals("isMe")){
+            itemView.setTag(true);
+        }else {
+            itemView.setTag(false);
+        }
     }
 }

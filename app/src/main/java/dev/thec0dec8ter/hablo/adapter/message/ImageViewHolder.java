@@ -29,6 +29,11 @@ public class ImageViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void bind(Media image){
+        if(image.getSender().equals("isMe")){
+            itemView.setTag(true);
+        }else {
+            itemView.setTag(false);
+        }
         thumbnail.setTag(image);
 
     }

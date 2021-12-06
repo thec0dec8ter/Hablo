@@ -26,7 +26,9 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import dev.thec0dec8ter.hablo.adapter.message.MessageAdapter;
+import dev.thec0dec8ter.hablo.model.Document;
 import dev.thec0dec8ter.hablo.model.Media;
+import dev.thec0dec8ter.hablo.model.Message;
 import dev.thec0dec8ter.hablo.utility.MediaUtility;
 
 import static dev.thec0dec8ter.hablo.utility.MediaUtility.timerConversion;
@@ -136,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         messageRecycler.setAdapter(messageAdapter);
+        setDummy();
 
     }
 
@@ -168,5 +171,23 @@ public class MainActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void setDummy(){
+        Message message = new Message();
+        Document document = new Document();
+        Media audio = new Media();
+        Media image = new Media();
+        Media video = new Media();
+        audio.setType("audio");
+        image.setType("image");
+        video.setType("video");
+        message.setSender("isMe");
+        messageAdapter.addMessage(message);
+        messageAdapter.addDocument(document);
+        messageAdapter.addMedia(audio);
+        messageAdapter.addMedia(image);
+        messageAdapter.addMedia(video);
+
     }
 }

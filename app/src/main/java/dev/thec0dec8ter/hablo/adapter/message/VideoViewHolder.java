@@ -29,6 +29,11 @@ public class VideoViewHolder extends RecyclerView.ViewHolder {
 
     public void bind(Media video){
         thumbnail.setTag(video);
+        if(video.getSender().equals("isMe")){
+            itemView.setTag(true);
+        }else {
+            itemView.setTag(false);
+        }
 
     }
 }

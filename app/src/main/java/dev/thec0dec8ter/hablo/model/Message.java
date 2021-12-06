@@ -1,20 +1,15 @@
 package dev.thec0dec8ter.hablo.model;
 
-public class Message{
-    private String user;
+import java.io.Serializable;
+
+public class Message implements Serializable {
+    private String id;
     private String content;
     private String timestamp;
+    private String sender = "";
 
     public Message(){
 
-    }
-
-    public String getUser() {
-        return user;
-    }
-
-    public void setUser(String user) {
-        this.user = user;
     }
 
     public String getContent() {
@@ -31,5 +26,21 @@ public class Message{
 
     public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getSender() {
+        return sender;
+    }
+
+    public void setSender(String sender) {
+        this.sender = sender;
     }
 }

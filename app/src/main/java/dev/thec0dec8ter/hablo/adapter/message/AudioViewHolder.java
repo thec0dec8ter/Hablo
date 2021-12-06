@@ -67,6 +67,11 @@ public class AudioViewHolder extends RecyclerView.ViewHolder {
 
     public void bind(Media audio){
         seekBar.setTag(audio);
+        if(audio.getSender().equals("isMe")){
+            itemView.setTag(true);
+        }else {
+            itemView.setTag(false);
+        }
 
     }
 
