@@ -20,12 +20,14 @@
 
     <Button
         android:id="@+id/start_call"
+        android:text="Start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"/>
 
     <Button
         android:id="@+id/end_call"
+        android:text="End"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"/>

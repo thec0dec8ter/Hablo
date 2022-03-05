@@ -5,8 +5,8 @@
     tools:showIn="@layout/activity_main">
 
     <item
-        android:id="@+id/menu_call"
-        android:title="Call"
+        android:id="@+id/menu_voice_call"
+        android:title="Voice call"
         android:icon="@drawable/ic_call"
         app:showAsAction="ifRoom"/>
 

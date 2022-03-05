@@ -162,12 +162,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.menu_call:
-                //TODO: add call function
+            case R.id.menu_voice_call:
+                startActivity(new Intent(this, CallActivity.class));
+                return true;
             case R.id.menu_video_call:
-                //TODO: add video call function
+//                startActivity(new Intent(this, CallActivity.class));
+                return true;
             case R.id.show_participants:
                 startActivity(new Intent(this, InfoActivity.class));
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

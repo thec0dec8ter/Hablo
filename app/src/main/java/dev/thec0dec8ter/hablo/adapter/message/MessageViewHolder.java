@@ -2,15 +2,10 @@ package dev.thec0dec8ter.hablo.adapter.message;
 
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
 
 import dev.thec0dec8ter.hablo.model.Message;
 

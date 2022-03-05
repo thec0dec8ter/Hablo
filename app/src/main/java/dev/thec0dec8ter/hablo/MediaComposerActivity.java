@@ -1,8 +1,8 @@
 package dev.thec0dec8ter.hablo;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MediaComposerActivity extends AppCompatActivity {
 

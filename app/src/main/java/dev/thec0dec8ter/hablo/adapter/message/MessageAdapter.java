@@ -1,7 +1,6 @@
 package dev.thec0dec8ter.hablo.adapter.message;
 
 import android.content.Context;
-import android.os.CountDownTimer;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,8 +9,6 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.google.android.exoplayer2.ExoPlayer;
 
 import java.util.ArrayList;
 
